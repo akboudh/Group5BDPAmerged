@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import type { Skill } from '../types';
 import { ResumeParser } from './ResumeParser';
 import { LinkedInParser } from './LinkedInParser';
+import { useTheme } from '../contexts/ThemeContext';
 import './SkillsInput.css';
 
 interface SkillsInputProps {
@@ -16,6 +17,7 @@ export function SkillsInput({ skills, userSkills, onSkillsChange }: SkillsInputP
   const [showSuggestions, setShowSuggestions] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const suggestionsRef = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
 
   // Filter suggestions based on input
   useEffect(() => {
@@ -71,13 +73,19 @@ export function SkillsInput({ skills, userSkills, onSkillsChange }: SkillsInputP
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && inputValue.trim()) {
       e.preventDefault();
+      e.stopPropagation();
       // Try to match with a suggestion first
       if (suggestions.length > 0) {
         handleAddSkill(suggestions[0].id);
       } else {
         handleAddSkill();
       }
+      // Keep focus on input to allow adding more skills
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 0);
     } else if (e.key === 'Escape') {
+      e.preventDefault();
       setShowSuggestions(false);
     }
   };
@@ -97,7 +105,7 @@ export function SkillsInput({ skills, userSkills, onSkillsChange }: SkillsInputP
   };
 
   return (
-    <div className="skills-input-container">
+    <div className={`skills-input-container ${theme}`}>
       <div className="skills-input-wrapper">
         <label htmlFor="skill-input" className="skills-label">
           Your Skills
@@ -152,7 +160,7 @@ export function SkillsInput({ skills, userSkills, onSkillsChange }: SkillsInputP
                   tabIndex={0}
                   role="option"
                 >
-                  {skill.label}
+                  <span className="suggestion-label">{skill.label}</span>
                   <span className="suggestion-category">{skill.category}</span>
                 </div>
               ))}

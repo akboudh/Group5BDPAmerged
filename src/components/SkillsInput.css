@@ -290,7 +290,7 @@
   left: 0;
   right: 0;
   margin-top: 0.25rem;
-  background: white;
+  background: #ffffff;
   border: 2px solid #e2e8f0;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -301,8 +301,9 @@
 }
 
 .skills-input-container.dark .suggestions-dropdown {
-  background: rgba(26, 26, 46, 0.95);
-  border-color: rgba(255, 255, 255, 0.1);
+  background: #1e293b;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(139, 92, 246, 0.1);
   backdrop-filter: blur(20px);
 }
 
@@ -325,10 +326,12 @@
   cursor: pointer;
   transition: all 0.2s ease;
   border-bottom: 1px solid #f0f0f0;
+  color: #1e293b;
 }
 
 .skills-input-container.dark .suggestion-item {
   border-bottom-color: rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
 }
 
 .suggestion-item:last-child {
@@ -337,28 +340,43 @@
 
 .suggestion-item:hover,
 .suggestion-item:focus {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
   outline: none;
   transform: translateX(5px);
+  color: #6366f1;
 }
 
 .skills-input-container.dark .suggestion-item:hover,
 .skills-input-container.dark .suggestion-item:focus {
-  background: linear-gradient(135deg, rgba(167, 139, 250, 0.2) 0%, rgba(196, 181, 253, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(167, 139, 250, 0.3) 100%);
+  color: #c4b5fd;
+}
+
+.suggestion-label {
+  font-weight: 500;
+  color: #1e293b;
+  flex: 1;
+}
+
+.skills-input-container.dark .suggestion-label {
+  color: #f1f5f9;
 }
 
 .suggestion-category {
   font-size: 0.75rem;
-  color: #666;
+  color: #475569;
   text-transform: capitalize;
   padding: 0.25rem 0.5rem;
-  background: #e8e8e8;
+  background: #e2e8f0;
   border-radius: 12px;
+  font-weight: 500;
+  margin-left: 0.5rem;
 }
 
 .skills-input-container.dark .suggestion-category {
-  color: rgba(255, 255, 255, 0.7);
-  background: rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  background: rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .clear-all-button {

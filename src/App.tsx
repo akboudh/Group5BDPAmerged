@@ -56,6 +56,22 @@ function AppContent() {
     }
   };
 
+  // Handle start over - reset everything and go back to landing
+  const handleStartOver = () => {
+    setUserProfile(null);
+    setUserSkills([]);
+    setSelectedRoleId(null);
+    setAnalysisResult(null);
+    setCurrentStep('landing');
+  };
+
+  // Handle change role - just reset the role selection, keep everything else
+  const handleChangeRole = () => {
+    setSelectedRoleId(null);
+    // Keep userProfile, userSkills, and everything else intact
+    // This will show the role selection component while keeping all data
+  };
+
   // Update user profile skills when skills change
   useEffect(() => {
     if (userProfile && userSkills.length > 0) {
@@ -70,17 +86,14 @@ function AppContent() {
       if (role && skills.length > 0) {
         const result = analyzeGaps(userSkills, role, skills);
         setAnalysisResult(result);
-        // Auto-advance to dashboard if we have skills and a role
-        if (userSkills.length > 0 && currentStep === 'skills') {
-          setCurrentStep('dashboard');
-        }
+        // Don't auto-advance - let user manually proceed to dashboard
       } else {
         setAnalysisResult(null);
       }
     } else {
       setAnalysisResult(null);
     }
-  }, [userSkills, selectedRoleId, roles, skills, currentStep]);
+  }, [userSkills, selectedRoleId, roles, skills]);
 
   const selectedRole = roles.find(r => r.id === selectedRoleId) || null;
 
@@ -174,6 +187,8 @@ function AppContent() {
                     userProfile={userProfile}
                     userSkills={userSkills}
                     onSkillsChange={setUserSkills}
+                    onStartOver={handleStartOver}
+                    onChangeRole={handleChangeRole}
                   />
                 </section>
 

@@ -16,11 +16,13 @@ interface ResultsDashboardProps {
   userProfile: UserProfile | null;
   userSkills: string[];
   onSkillsChange?: (skills: string[]) => void;
+  onStartOver?: () => void;
+  onChangeRole?: () => void;
 }
 
 type TabType = 'skills' | 'timeline' | 'job-stats' | 'projects';
 
-export function ResultsDashboard({ role, skills, analysisResult, userProfile, userSkills, onSkillsChange }: ResultsDashboardProps) {
+export function ResultsDashboard({ role, skills, analysisResult, userProfile, userSkills, onSkillsChange, onStartOver, onChangeRole }: ResultsDashboardProps) {
   const [activeTab, setActiveTab] = useState<TabType>('skills');
   const [resources, setResources] = useState<RecommendedResource[]>([]);
   const [timeline, setTimeline] = useState<TimelineEvent[]>([]);
@@ -223,6 +225,28 @@ export function ResultsDashboard({ role, skills, analysisResult, userProfile, us
             loading={projectsLoading}
             role={role}
           />
+        )}
+      </div>
+
+      {/* Action Buttons */}
+      <div className="dashboard-actions">
+        {onChangeRole && (
+          <button
+            className="btn-change-role"
+            onClick={onChangeRole}
+            type="button"
+          >
+            🔄 Change Role
+          </button>
+        )}
+        {onStartOver && (
+          <button
+            className="btn-start-over"
+            onClick={onStartOver}
+            type="button"
+          >
+            🔁 Start Over
+          </button>
         )}
       </div>
     </div>

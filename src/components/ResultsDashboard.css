@@ -45,15 +45,19 @@
 
 .role-name {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 0.5rem;
-  color: #1a202c;
+  color: #1e293b;
   transition: color 0.3s ease;
   letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .results-dashboard.dark .role-name {
-  color: #f1f5f9;
+  color: #ffffff;
+  text-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(139, 92, 246, 0.2);
 }
 
 .role-description {
@@ -87,10 +91,19 @@
   stroke: #e0e0e0;
 }
 
+.results-dashboard.dark .progress-ring-background {
+  stroke: rgba(255, 255, 255, 0.15);
+}
+
 .progress-ring {
-  stroke: #4f46e5;
+  stroke: #6366f1;
   transition: stroke-dashoffset 0.5s ease;
-  filter: drop-shadow(0 2px 4px rgba(79, 70, 229, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.3));
+}
+
+.results-dashboard.dark .progress-ring {
+  stroke: #8b5cf6;
+  filter: drop-shadow(0 2px 4px rgba(139, 92, 246, 0.4));
 }
 
 .readiness-percentage {
@@ -123,6 +136,18 @@
 }
 
 .results-dashboard.dark .percentage-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.weighted-readiness {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.results-dashboard.dark .weighted-readiness {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -934,6 +959,82 @@
 
   .timeline-marker {
     left: -1.5rem;
+  }
+}
+
+/* Dashboard Action Buttons */
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.results-dashboard.dark .dashboard-actions {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-change-role,
+.btn-start-over {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-change-role {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-change-role:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+}
+
+.btn-start-over {
+  background: rgba(255, 255, 255, 0.1);
+  color: #6366f1;
+  border: 2px solid #6366f1;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+.results-dashboard.dark .btn-start-over {
+  background: rgba(255, 255, 255, 0.05);
+  color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.btn-start-over:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: rgba(99, 102, 241, 0.1);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.results-dashboard.dark .btn-start-over:hover {
+  background: rgba(139, 92, 246, 0.15);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+}
+
+@media (max-width: 768px) {
+  .dashboard-actions {
+    flex-direction: column;
+  }
+
+  .btn-change-role,
+  .btn-start-over {
+    width: 100%;
   }
 }
 

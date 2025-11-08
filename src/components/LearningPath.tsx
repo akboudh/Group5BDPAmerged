@@ -1,6 +1,7 @@
 import type { Skill, LearningResource, GapAnalysisResult, RoleDefinition } from '../types';
 import { getSkillLabel } from '../utils/gapAnalysis';
 import { getRoadmapUrl, hasRoadmapMapping } from '../utils/roadmapMapper';
+import { useTheme } from '../contexts/ThemeContext';
 import './LearningPath.css';
 
 interface LearningPathProps {
@@ -16,6 +17,8 @@ export function LearningPath({
   analysisResult,
   role
 }: LearningPathProps) {
+  const { theme } = useTheme();
+  
   if (!analysisResult || !role || analysisResult.missingSkills.length === 0) {
     return null;
   }
@@ -84,7 +87,7 @@ export function LearningPath({
   });
 
   return (
-    <div className="learning-path-container">
+    <div className={`learning-path-container ${theme}`}>
       <h2 className="learning-path-title">Your Learning Path</h2>
       <p className="learning-path-subtitle">
         Recommended resources to help you learn the missing skills for {role.name}

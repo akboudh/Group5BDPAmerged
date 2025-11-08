@@ -232,7 +232,606 @@
     "label": "Kotlin",
     "aliases": ["kotlin", "Kotlin"],
     "category": "language"
+  },
+  {
+    "id": "rust",
+    "label": "Rust",
+    "aliases": ["rust", "Rust"],
+    "category": "language"
+  },
+  {
+    "id": "scala",
+    "label": "Scala",
+    "aliases": ["scala", "Scala"],
+    "category": "language"
+  },
+  {
+    "id": "dart",
+    "label": "Dart",
+    "aliases": ["dart", "Dart"],
+    "category": "language"
+  },
+  {
+    "id": "perl",
+    "label": "Perl",
+    "aliases": ["perl", "Perl"],
+    "category": "language"
+  },
+  {
+    "id": "lua",
+    "label": "Lua",
+    "aliases": ["lua", "Lua"],
+    "category": "language"
+  },
+  {
+    "id": "nextjs",
+    "label": "Next.js",
+    "aliases": ["nextjs", "Next.js", "next", "Next"],
+    "category": "framework"
+  },
+  {
+    "id": "nuxtjs",
+    "label": "Nuxt.js",
+    "aliases": ["nuxtjs", "Nuxt.js", "nuxt", "Nuxt"],
+    "category": "framework"
+  },
+  {
+    "id": "svelte",
+    "label": "Svelte",
+    "aliases": ["svelte", "Svelte", "sveltekit"],
+    "category": "framework"
+  },
+  {
+    "id": "nestjs",
+    "label": "NestJS",
+    "aliases": ["nestjs", "NestJS", "nest", "Nest"],
+    "category": "framework"
+  },
+  {
+    "id": "fastapi",
+    "label": "FastAPI",
+    "aliases": ["fastapi", "FastAPI", "fast api"],
+    "category": "framework"
+  },
+  {
+    "id": "spring",
+    "label": "Spring Boot",
+    "aliases": ["spring", "Spring", "spring boot", "Spring Boot", "springboot"],
+    "category": "framework"
+  },
+  {
+    "id": "rails",
+    "label": "Ruby on Rails",
+    "aliases": ["rails", "Rails", "ruby on rails", "Ruby on Rails", "ror"],
+    "category": "framework"
+  },
+  {
+    "id": "laravel",
+    "label": "Laravel",
+    "aliases": ["laravel", "Laravel"],
+    "category": "framework"
+  },
+  {
+    "id": "aspnet",
+    "label": "ASP.NET",
+    "aliases": ["asp.net", "ASP.NET", "aspnet", "asp net"],
+    "category": "framework"
+  },
+  {
+    "id": "graphql",
+    "label": "GraphQL",
+    "aliases": ["graphql", "GraphQL"],
+    "category": "framework"
+  },
+  {
+    "id": "apollographql",
+    "label": "Apollo GraphQL",
+    "aliases": ["apollo", "Apollo", "apollo graphql", "Apollo GraphQL"],
+    "category": "framework"
+  },
+  {
+    "id": "redux",
+    "label": "Redux",
+    "aliases": ["redux", "Redux"],
+    "category": "framework"
+  },
+  {
+    "id": "mobx",
+    "label": "MobX",
+    "aliases": ["mobx", "MobX", "mob x"],
+    "category": "framework"
+  },
+  {
+    "id": "vuex",
+    "label": "Vuex",
+    "aliases": ["vuex", "Vuex"],
+    "category": "framework"
+  },
+  {
+    "id": "zustand",
+    "label": "Zustand",
+    "aliases": ["zustand", "Zustand"],
+    "category": "framework"
+  },
+  {
+    "id": "jest",
+    "label": "Jest",
+    "aliases": ["jest", "Jest"],
+    "category": "framework"
+  },
+  {
+    "id": "cypress",
+    "label": "Cypress",
+    "aliases": ["cypress", "Cypress"],
+    "category": "framework"
+  },
+  {
+    "id": "playwright",
+    "label": "Playwright",
+    "aliases": ["playwright", "Playwright"],
+    "category": "framework"
+  },
+  {
+    "id": "selenium",
+    "label": "Selenium",
+    "aliases": ["selenium", "Selenium"],
+    "category": "framework"
+  },
+  {
+    "id": "webpack",
+    "label": "Webpack",
+    "aliases": ["webpack", "Webpack"],
+    "category": "framework"
+  },
+  {
+    "id": "vite",
+    "label": "Vite",
+    "aliases": ["vite", "Vite"],
+    "category": "framework"
+  },
+  {
+    "id": "tailwindcss",
+    "label": "Tailwind CSS",
+    "aliases": ["tailwind", "Tailwind", "tailwind css", "Tailwind CSS"],
+    "category": "framework"
+  },
+  {
+    "id": "bootstrap",
+    "label": "Bootstrap",
+    "aliases": ["bootstrap", "Bootstrap"],
+    "category": "framework"
+  },
+  {
+    "id": "sass",
+    "label": "SASS",
+    "aliases": ["sass", "SASS", "scss", "SCSS"],
+    "category": "framework"
+  },
+  {
+    "id": "less",
+    "label": "LESS",
+    "aliases": ["less", "LESS"],
+    "category": "framework"
+  },
+  {
+    "id": "kubernetes",
+    "label": "Kubernetes",
+    "aliases": ["kubernetes", "Kubernetes", "k8s", "K8s"],
+    "category": "tool"
+  },
+  {
+    "id": "jenkins",
+    "label": "Jenkins",
+    "aliases": ["jenkins", "Jenkins"],
+    "category": "tool"
+  },
+  {
+    "id": "circleci",
+    "label": "CircleCI",
+    "aliases": ["circleci", "CircleCI", "circle ci"],
+    "category": "tool"
+  },
+  {
+    "id": "githubactions",
+    "label": "GitHub Actions",
+    "aliases": ["github actions", "GitHub Actions", "gh actions"],
+    "category": "tool"
+  },
+  {
+    "id": "gitlab",
+    "label": "GitLab",
+    "aliases": ["gitlab", "GitLab", "git lab"],
+    "category": "tool"
+  },
+  {
+    "id": "azure",
+    "label": "Azure",
+    "aliases": ["azure", "Azure", "microsoft azure"],
+    "category": "tool"
+  },
+  {
+    "id": "gcp",
+    "label": "Google Cloud Platform",
+    "aliases": ["gcp", "GCP", "google cloud", "Google Cloud", "google cloud platform"],
+    "category": "tool"
+  },
+  {
+    "id": "terraform",
+    "label": "Terraform",
+    "aliases": ["terraform", "Terraform"],
+    "category": "tool"
+  },
+  {
+    "id": "ansible",
+    "label": "Ansible",
+    "aliases": ["ansible", "Ansible"],
+    "category": "tool"
+  },
+  {
+    "id": "redis",
+    "label": "Redis",
+    "aliases": ["redis", "Redis"],
+    "category": "tool"
+  },
+  {
+    "id": "elasticsearch",
+    "label": "Elasticsearch",
+    "aliases": ["elasticsearch", "Elasticsearch", "elastic search"],
+    "category": "tool"
+  },
+  {
+    "id": "kafka",
+    "label": "Apache Kafka",
+    "aliases": ["kafka", "Kafka", "apache kafka"],
+    "category": "tool"
+  },
+  {
+    "id": "rabbitmq",
+    "label": "RabbitMQ",
+    "aliases": ["rabbitmq", "RabbitMQ", "rabbit mq"],
+    "category": "tool"
+  },
+  {
+    "id": "nginx",
+    "label": "Nginx",
+    "aliases": ["nginx", "Nginx"],
+    "category": "tool"
+  },
+  {
+    "id": "apache",
+    "label": "Apache",
+    "aliases": ["apache", "Apache"],
+    "category": "tool"
+  },
+  {
+    "id": "firebase",
+    "label": "Firebase",
+    "aliases": ["firebase", "Firebase"],
+    "category": "tool"
+  },
+  {
+    "id": "supabase",
+    "label": "Supabase",
+    "aliases": ["supabase", "Supabase"],
+    "category": "tool"
+  },
+  {
+    "id": "vercel",
+    "label": "Vercel",
+    "aliases": ["vercel", "Vercel"],
+    "category": "tool"
+  },
+  {
+    "id": "netlify",
+    "label": "Netlify",
+    "aliases": ["netlify", "Netlify"],
+    "category": "tool"
+  },
+  {
+    "id": "heroku",
+    "label": "Heroku",
+    "aliases": ["heroku", "Heroku"],
+    "category": "tool"
+  },
+  {
+    "id": "jira",
+    "label": "Jira",
+    "aliases": ["jira", "Jira"],
+    "category": "tool"
+  },
+  {
+    "id": "confluence",
+    "label": "Confluence",
+    "aliases": ["confluence", "Confluence"],
+    "category": "tool"
+  },
+  {
+    "id": "slack",
+    "label": "Slack",
+    "aliases": ["slack", "Slack"],
+    "category": "tool"
+  },
+  {
+    "id": "figma",
+    "label": "Figma",
+    "aliases": ["figma", "Figma"],
+    "category": "tool"
+  },
+  {
+    "id": "sketch",
+    "label": "Sketch",
+    "aliases": ["sketch", "Sketch"],
+    "category": "tool"
+  },
+  {
+    "id": "adobexd",
+    "label": "Adobe XD",
+    "aliases": ["adobe xd", "Adobe XD", "xd", "XD"],
+    "category": "tool"
+  },
+  {
+    "id": "postman",
+    "label": "Postman",
+    "aliases": ["postman", "Postman"],
+    "category": "tool"
+  },
+  {
+    "id": "insomnia",
+    "label": "Insomnia",
+    "aliases": ["insomnia", "Insomnia"],
+    "category": "tool"
+  },
+  {
+    "id": "swagger",
+    "label": "Swagger",
+    "aliases": ["swagger", "Swagger"],
+    "category": "tool"
+  },
+  {
+    "id": "scikitlearn",
+    "label": "Scikit-learn",
+    "aliases": ["scikit-learn", "Scikit-learn", "sklearn", "scikit learn"],
+    "category": "framework"
+  },
+  {
+    "id": "tensorflow",
+    "label": "TensorFlow",
+    "aliases": ["tensorflow", "TensorFlow", "tf"],
+    "category": "framework"
+  },
+  {
+    "id": "pytorch",
+    "label": "PyTorch",
+    "aliases": ["pytorch", "PyTorch", "pytorch"],
+    "category": "framework"
+  },
+  {
+    "id": "keras",
+    "label": "Keras",
+    "aliases": ["keras", "Keras"],
+    "category": "framework"
+  },
+  {
+    "id": "jupyter",
+    "label": "Jupyter",
+    "aliases": ["jupyter", "Jupyter", "jupyter notebook"],
+    "category": "tool"
+  },
+  {
+    "id": "colab",
+    "label": "Google Colab",
+    "aliases": ["colab", "Colab", "google colab", "Google Colab"],
+    "category": "tool"
+  },
+  {
+    "id": "spark",
+    "label": "Apache Spark",
+    "aliases": ["spark", "Spark", "apache spark"],
+    "category": "framework"
+  },
+  {
+    "id": "hadoop",
+    "label": "Hadoop",
+    "aliases": ["hadoop", "Hadoop", "apache hadoop"],
+    "category": "framework"
+  },
+  {
+    "id": "airflow",
+    "label": "Apache Airflow",
+    "aliases": ["airflow", "Airflow", "apache airflow"],
+    "category": "tool"
+  },
+  {
+    "id": "looker",
+    "label": "Looker",
+    "aliases": ["looker", "Looker"],
+    "category": "tool"
+  },
+  {
+    "id": "snowflake",
+    "label": "Snowflake",
+    "aliases": ["snowflake", "Snowflake"],
+    "category": "tool"
+  },
+  {
+    "id": "databricks",
+    "label": "Databricks",
+    "aliases": ["databricks", "Databricks"],
+    "category": "tool"
+  },
+  {
+    "id": "qlik",
+    "label": "Qlik",
+    "aliases": ["qlik", "Qlik"],
+    "category": "tool"
+  },
+  {
+    "id": "microservices",
+    "label": "Microservices",
+    "aliases": ["microservices", "Microservices", "micro services"],
+    "category": "framework"
+  },
+  {
+    "id": "restapi",
+    "label": "REST API",
+    "aliases": ["rest", "REST", "rest api", "REST API", "restful"],
+    "category": "framework"
+  },
+  {
+    "id": "soap",
+    "label": "SOAP",
+    "aliases": ["soap", "SOAP"],
+    "category": "framework"
+  },
+  {
+    "id": "websockets",
+    "label": "WebSockets",
+    "aliases": ["websockets", "WebSockets", "websocket", "WebSocket"],
+    "category": "framework"
+  },
+  {
+    "id": "grpc",
+    "label": "gRPC",
+    "aliases": ["grpc", "gRPC"],
+    "category": "framework"
+  },
+  {
+    "id": "oauth",
+    "label": "OAuth",
+    "aliases": ["oauth", "OAuth", "oauth2", "OAuth2"],
+    "category": "framework"
+  },
+  {
+    "id": "jwt",
+    "label": "JWT",
+    "aliases": ["jwt", "JWT", "json web token"],
+    "category": "framework"
+  },
+  {
+    "id": "linux",
+    "label": "Linux",
+    "aliases": ["linux", "Linux", "ubuntu", "Ubuntu", "debian", "Debian"],
+    "category": "tool"
+  },
+  {
+    "id": "bash",
+    "label": "Bash",
+    "aliases": ["bash", "Bash", "shell", "Shell", "shell scripting"],
+    "category": "language"
+  },
+  {
+    "id": "powershell",
+    "label": "PowerShell",
+    "aliases": ["powershell", "PowerShell", "ps"],
+    "category": "language"
+  },
+  {
+    "id": "vim",
+    "label": "Vim",
+    "aliases": ["vim", "Vim"],
+    "category": "tool"
+  },
+  {
+    "id": "vscode",
+    "label": "VS Code",
+    "aliases": ["vscode", "VS Code", "visual studio code", "Visual Studio Code"],
+    "category": "tool"
+  },
+  {
+    "id": "intellij",
+    "label": "IntelliJ IDEA",
+    "aliases": ["intellij", "IntelliJ", "intellij idea"],
+    "category": "tool"
+  },
+  {
+    "id": "eclipse",
+    "label": "Eclipse",
+    "aliases": ["eclipse", "Eclipse"],
+    "category": "tool"
+  },
+  {
+    "id": "xcode",
+    "label": "Xcode",
+    "aliases": ["xcode", "Xcode"],
+    "category": "tool"
+  },
+  {
+    "id": "androidstudio",
+    "label": "Android Studio",
+    "aliases": ["android studio", "Android Studio"],
+    "category": "tool"
+  },
+  {
+    "id": "reactnative",
+    "label": "React Native",
+    "aliases": ["react native", "React Native", "reactnative"],
+    "category": "framework"
+  },
+  {
+    "id": "flutter",
+    "label": "Flutter",
+    "aliases": ["flutter", "Flutter"],
+    "category": "framework"
+  },
+  {
+    "id": "ionic",
+    "label": "Ionic",
+    "aliases": ["ionic", "Ionic"],
+    "category": "framework"
+  },
+  {
+    "id": "xamarin",
+    "label": "Xamarin",
+    "aliases": ["xamarin", "Xamarin"],
+    "category": "framework"
+  },
+  {
+    "id": "unity",
+    "label": "Unity",
+    "aliases": ["unity", "Unity"],
+    "category": "tool"
+  },
+  {
+    "id": "unreal",
+    "label": "Unreal Engine",
+    "aliases": ["unreal", "Unreal", "unreal engine"],
+    "category": "tool"
+  },
+  {
+    "id": "leadership",
+    "label": "Leadership",
+    "aliases": ["leadership", "Leadership"],
+    "category": "soft"
+  },
+  {
+    "id": "adaptability",
+    "label": "Adaptability",
+    "aliases": ["adaptability", "Adaptability", "adaptive"],
+    "category": "soft"
+  },
+  {
+    "id": "criticalthinking",
+    "label": "Critical Thinking",
+    "aliases": ["critical thinking", "Critical Thinking", "critical-thinking"],
+    "category": "soft"
+  },
+  {
+    "id": "creativity",
+    "label": "Creativity",
+    "aliases": ["creativity", "Creativity", "creative"],
+    "category": "soft"
+  },
+  {
+    "id": "attentiontodetail",
+    "label": "Attention to Detail",
+    "aliases": ["attention to detail", "Attention to Detail", "detail-oriented"],
+    "category": "soft"
+  },
+  {
+    "id": "analytical",
+    "label": "Analytical Skills",
+    "aliases": ["analytical", "Analytical", "analysis", "analytical thinking"],
+    "category": "soft"
   }
-  
 ]
 

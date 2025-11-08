@@ -12,10 +12,10 @@ interface PersonalInfoProps {
 
 export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
   const [name, setName] = useState('');
-  const [isStudent, setIsStudent] = useState<boolean>(true);
+  const [isStudent, setIsStudent] = useState<boolean>(false);
   const [school, setSchool] = useState('');
   const [graduationYear, setGraduationYear] = useState('');
-  const [experienceLevel, setExperienceLevel] = useState<UserProfile['experienceLevel']>('student');
+  const [experienceLevel, setExperienceLevel] = useState<UserProfile['experienceLevel']>('other');
   const [dreamRoleId, setDreamRoleId] = useState<string | null>(null);
   const [currentStep, setCurrentStep] = useState(1);
   const totalSteps = 2;
@@ -38,9 +38,11 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
 
   const canProceed = () => {
     if (currentStep === 1) {
-      return !isStudent || school.trim().length > 0;
+      // Step 1: Basic info - all optional, can always proceed
+      return true;
     }
     if (currentStep === 2) {
+      // Step 2: Occupation selection is mandatory
       return dreamRoleId !== null;
     }
     return false;
@@ -76,9 +78,14 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
         </div>
 
         <form className="personal-info-form" onSubmit={handleSubmit}>
-          {/* Step 1: Basic Info */}
+          {/* Step 1: Basic Info - OPTIONAL */}
           {currentStep === 1 && (
             <div className="form-step">
+              <h2 className="step-title">Tell Us About Yourself</h2>
+              <p className="step-description">
+                All fields are optional. Share information to get more personalized recommendations.
+              </p>
+
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
                   Name <span className="optional">(optional)</span>
@@ -95,7 +102,7 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
 
               <div className="form-group">
                 <label htmlFor="isStudent" className="form-label">
-                  Are you currently a student? <span className="required">*</span>
+                  Are you currently a student?
                 </label>
                 <select
                   id="isStudent"
@@ -112,8 +119,8 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
                   }}
                   className="form-select"
                 >
-                  <option value="yes">Yes</option>
                   <option value="no">No</option>
+                  <option value="yes">Yes</option>
                 </select>
               </div>
 
@@ -121,16 +128,15 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
                 <>
                   <div className="form-group">
                     <label htmlFor="school" className="form-label">
-                      School or University <span className="required">*</span>
+                      School or University <span className="optional">(optional)</span>
                     </label>
                     <select
                       id="school"
                       value={school}
                       onChange={(e) => setSchool(e.target.value)}
                       className="form-select"
-                      required
                     >
-                      <option value="">Select your school...</option>
+                      <option value="">Select your school (optional)...</option>
                       {colleges.map((college, index) => (
                         <option key={index} value={college}>
                           {college}
@@ -178,12 +184,12 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
             </div>
           )}
 
-          {/* Step 2: Dream Role */}
+          {/* Step 2: Dream Role (Occupation) - MANDATORY */}
           {currentStep === 2 && (
             <div className="form-step">
-              <h2 className="step-title">What's Your Dream Role?</h2>
+              <h2 className="step-title">Select Your Dream Role</h2>
               <p className="step-description">
-                Select the role you're most interested in. We'll analyze your skills and create a personalized learning path.
+                Choose the role you're most interested in. We'll analyze your skills and create a personalized learning path.
               </p>
               <div className="roles-grid-compact">
                 {roles.map(role => (
