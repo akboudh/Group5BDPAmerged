@@ -32,3 +32,8 @@ dist-ssr
 # Scraped data
 scraped-*.json
 *.scraped.json
+
+# Original repository clones (not needed in merged repo)
+repo1/
+repo2/
+repo3/
