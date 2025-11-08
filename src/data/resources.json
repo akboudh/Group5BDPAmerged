@@ -1,0 +1,451 @@
+[
+  {
+    "id": "js-resource-1",
+    "skillId": "javascript",
+    "title": "JavaScript Algorithms and Data Structures",
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "platform": "freeCodeCamp",
+    "type": "interactive"
+  },
+  {
+    "id": "js-resource-2",
+    "skillId": "javascript",
+    "title": "JavaScript Guide - MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "platform": "MDN",
+    "type": "docs"
+  },
+  {
+    "id": "python-resource-1",
+    "skillId": "python",
+    "title": "Scientific Computing with Python",
+    "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+    "platform": "freeCodeCamp",
+    "type": "interactive"
+  },
+  {
+    "id": "python-resource-2",
+    "skillId": "python",
+    "title": "Python for Everybody Specialization",
+    "url": "https://www.coursera.org/specializations/python",
+    "platform": "Coursera",
+    "type": "interactive"
+  },
+  {
+    "id": "html-resource-1",
+    "skillId": "html",
+    "title": "Learn HTML - freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "platform": "freeCodeCamp",
+    "type": "interactive"
+  },
+  {
+    "id": "html-resource-2",
+    "skillId": "html",
+    "title": "HTML: HyperText Markup Language - MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "platform": "MDN",
+    "type": "docs"
+  },
+  {
+    "id": "css-resource-1",
+    "skillId": "css",
+    "title": "Learn CSS - freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "platform": "freeCodeCamp",
+    "type": "interactive"
+  },
+  {
+    "id": "css-resource-2",
+    "skillId": "css",
+    "title": "CSS: Cascading Style Sheets - MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "platform": "MDN",
+    "type": "docs"
+  },
+  {
+    "id": "react-resource-1",
+    "skillId": "react",
+    "title": "React - The Complete Guide",
+    "url": "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
+    "platform": "Udemy",
+    "type": "video"
+  },
+  {
+    "id": "react-resource-2",
+    "skillId": "react",
+    "title": "React Documentation",
+    "url": "https://react.dev/learn",
+    "platform": "React",
+    "type": "docs"
+  },
+  {
+    "id": "nodejs-resource-1",
+    "skillId": "nodejs",
+    "title": "Node.js and Express.js - Full Course",
+    "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+    "platform": "YouTube",
+    "type": "video"
+  },
+  {
+    "id": "nodejs-resource-2",
+    "skillId": "nodejs",
+    "title": "Node.js Documentation",
+    "url": "https://nodejs.org/en/docs/",
+    "platform": "Node.js",
+    "type": "docs"
+  },
+  {
+    "id": "sql-resource-1",
+    "skillId": "sql",
+    "title": "SQL Tutorial - W3Schools",
+    "url": "https://www.w3schools.com/sql/",
+    "platform": "W3Schools",
+    "type": "interactive"
+  },
+  {
+    "id": "sql-resource-2",
+    "skillId": "sql",
+    "title": "Learn SQL - freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/relational-database/",
+    "platform": "freeCodeCamp",
+    "type": "interactive"
+  },
+  {
+    "id": "git-resource-1",
+    "skillId": "git",
+    "title": "Git and GitHub for Beginners - Crash Course",
+    "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+    "platform": "YouTube",
+    "type": "video"
+  },
+  {
+    "id": "git-resource-2",
+    "skillId": "git",
+    "title": "Git Documentation",
+    "url": "https://git-scm.com/doc",
+    "platform": "Git",
+    "type": "docs"
+  },
+  {
+    "id": "github-resource-1",
+    "skillId": "github",
+    "title": "GitHub Skills",
+    "url": "https://skills.github.com/",
+    "platform": "GitHub",
+    "type": "interactive"
+  },
+  {
+    "id": "express-resource-1",
+    "skillId": "express",
+    "title": "Express.js Guide",
+    "url": "https://expressjs.com/en/starter/installing.html",
+    "platform": "Express.js",
+    "type": "docs"
+  },
+  {
+    "id": "django-resource-1",
+    "skillId": "django",
+    "title": "Django for Everybody Specialization",
+    "url": "https://www.coursera.org/specializations/django",
+    "platform": "Coursera",
+    "type": "interactive"
+  },
+  {
+    "id": "django-resource-2",
+    "skillId": "django",
+    "title": "Django Documentation",
+    "url": "https://docs.djangoproject.com/",
+    "platform": "Django",
+    "type": "docs"
+  },
+  {
+    "id": "flask-resource-1",
+    "skillId": "flask",
+    "title": "Flask Tutorial",
+    "url": "https://flask.palletsprojects.com/en/2.3.x/tutorial/",
+    "platform": "Flask",
+    "type": "docs"
+  },
+  {
+    "id": "mongodb-resource-1",
+    "skillId": "mongodb",
+    "title": "MongoDB University",
+    "url": "https://university.mongodb.com/",
+    "platform": "MongoDB",
+    "type": "interactive"
+  },
+  {
+    "id": "postgresql-resource-1",
+    "skillId": "postgresql",
+    "title": "PostgreSQL Tutorial",
+    "url": "https://www.postgresqltutorial.com/",
+    "platform": "PostgreSQL Tutorial",
+    "type": "interactive"
+  },
+  {
+    "id": "mysql-resource-1",
+    "skillId": "mysql",
+    "title": "MySQL Tutorial",
+    "url": "https://www.mysqltutorial.org/",
+    "platform": "MySQL Tutorial",
+    "type": "interactive"
+  },
+  {
+    "id": "pandas-resource-1",
+    "skillId": "pandas",
+    "title": "Pandas Tutorial",
+    "url": "https://pandas.pydata.org/docs/getting_started/index.html",
+    "platform": "Pandas",
+    "type": "docs"
+  },
+  {
+    "id": "pandas-resource-2",
+    "skillId": "pandas",
+    "title": "Pandas for Data Analysis",
+    "url": "https://www.youtube.com/watch?v=vmEHCJofslg",
+    "platform": "YouTube",
+    "type": "video"
+  },
+  {
+    "id": "tableau-resource-1",
+    "skillId": "tableau",
+    "title": "Tableau Training Videos",
+    "url": "https://www.tableau.com/learn/training",
+    "platform": "Tableau",
+    "type": "video"
+  },
+  {
+    "id": "docker-resource-1",
+    "skillId": "docker",
+    "title": "Docker Tutorial for Beginners",
+    "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+    "platform": "YouTube",
+    "type": "video"
+  },
+  {
+    "id": "docker-resource-2",
+    "skillId": "docker",
+    "title": "Docker Documentation",
+    "url": "https://docs.docker.com/",
+    "platform": "Docker",
+    "type": "docs"
+  },
+  {
+    "id": "aws-resource-1",
+    "skillId": "aws",
+    "title": "AWS Cloud Practitioner Essentials",
+    "url": "https://aws.amazon.com/training/course-descriptions/aws-cloud-practitioner-essentials/",
+    "platform": "AWS",
+    "type": "interactive"
+  },
+  {
+    "id": "typescript-resource-1",
+    "skillId": "typescript",
+    "title": "TypeScript Handbook",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "platform": "TypeScript",
+    "type": "docs"
+  },
+  {
+    "id": "excel-resource-1",
+    "skillId": "excel",
+    "title": "Excel Basics Tutorial",
+    "url": "https://www.youtube.com/watch?v=Vl0H-qTclOg",
+    "platform": "YouTube",
+    "type": "video"
+  },
+  {
+    "id": "communication-resource-1",
+    "skillId": "communication",
+    "title": "Effective Communication Skills",
+    "url": "https://www.coursera.org/learn/wharton-communication",
+    "platform": "Coursera",
+    "type": "interactive"
+  },
+  {
+    "id": "teamwork-resource-1",
+    "skillId": "teamwork",
+    "title": "Teamwork Skills",
+    "url": "https://www.skillsyouneed.com/interpersonal-skills.html",
+    "platform": "Skills You Need",
+    "type": "docs"
+  },
+  {
+    "id": "problemsolving-resource-1",
+    "skillId": "problemsolving",
+    "title": "Problem Solving Techniques",
+    "url": "https://www.mindtools.com/pages/article/newTMC_00.htm",
+    "platform": "Mind Tools",
+    "type": "docs"
+  },
+  {
+    "id": "timemanagement-resource-1",
+    "skillId": "timemanagement",
+    "title": "Time Management Fundamentals",
+    "url": "https://www.linkedin.com/learning/time-management-fundamentals",
+    "platform": "LinkedIn Learning",
+    "type": "video"
+  },
+  {
+    "id": "html-roadmap-1",
+    "skillId": "html",
+    "title": "Frontend Developer Roadmap - HTML",
+    "url": "https://roadmap.sh/frontend",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "css-roadmap-1",
+    "skillId": "css",
+    "title": "Frontend Developer Roadmap - CSS",
+    "url": "https://roadmap.sh/frontend",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "javascript-roadmap-1",
+    "skillId": "javascript",
+    "title": "Frontend Developer Roadmap - JavaScript",
+    "url": "https://roadmap.sh/frontend",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "typescript-roadmap-1",
+    "skillId": "typescript",
+    "title": "Frontend Developer Roadmap - TypeScript",
+    "url": "https://roadmap.sh/frontend",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "react-roadmap-1",
+    "skillId": "react",
+    "title": "React Developer Roadmap",
+    "url": "https://roadmap.sh/react",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "nodejs-roadmap-1",
+    "skillId": "nodejs",
+    "title": "Backend Developer Roadmap - Node.js",
+    "url": "https://roadmap.sh/backend",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "express-roadmap-1",
+    "skillId": "express",
+    "title": "Backend Developer Roadmap - Express.js",
+    "url": "https://roadmap.sh/backend",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "python-roadmap-1",
+    "skillId": "python",
+    "title": "Python Developer Roadmap",
+    "url": "https://roadmap.sh/python",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "django-roadmap-1",
+    "skillId": "django",
+    "title": "Python Developer Roadmap - Django",
+    "url": "https://roadmap.sh/python",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "flask-roadmap-1",
+    "skillId": "flask",
+    "title": "Python Developer Roadmap - Flask",
+    "url": "https://roadmap.sh/python",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "java-roadmap-1",
+    "skillId": "java",
+    "title": "Java Developer Roadmap",
+    "url": "https://roadmap.sh/java",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "sql-roadmap-1",
+    "skillId": "sql",
+    "title": "PostgreSQL DBA Roadmap - SQL",
+    "url": "https://roadmap.sh/postgresql-dba",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "mongodb-roadmap-1",
+    "skillId": "mongodb",
+    "title": "MongoDB Developer Roadmap",
+    "url": "https://roadmap.sh/mongodb",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "postgresql-roadmap-1",
+    "skillId": "postgresql",
+    "title": "PostgreSQL DBA Roadmap",
+    "url": "https://roadmap.sh/postgresql-dba",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "mysql-roadmap-1",
+    "skillId": "mysql",
+    "title": "PostgreSQL DBA Roadmap - MySQL",
+    "url": "https://roadmap.sh/postgresql-dba",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "docker-roadmap-1",
+    "skillId": "docker",
+    "title": "DevOps Roadmap - Docker",
+    "url": "https://roadmap.sh/devops",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "aws-roadmap-1",
+    "skillId": "aws",
+    "title": "AWS Roadmap",
+    "url": "https://roadmap.sh/aws",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "pandas-roadmap-1",
+    "skillId": "pandas",
+    "title": "Data Analyst Roadmap - Pandas",
+    "url": "https://roadmap.sh/data-analyst",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "tableau-roadmap-1",
+    "skillId": "tableau",
+    "title": "Data Analyst Roadmap - Tableau",
+    "url": "https://roadmap.sh/data-analyst",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  },
+  {
+    "id": "excel-roadmap-1",
+    "skillId": "excel",
+    "title": "Data Analyst Roadmap - Excel",
+    "url": "https://roadmap.sh/data-analyst",
+    "platform": "roadmap.sh",
+    "type": "interactive"
+  }
+]
+

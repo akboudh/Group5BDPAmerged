@@ -1,0 +1,163 @@
+.resume-parser-container {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.resume-parser-container:hover {
+  border-color: #4a90e2;
+  background: #f0f4f8;
+}
+
+.resume-parser-header {
+  margin-bottom: 1rem;
+}
+
+.resume-parser-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.resume-parser-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.resume-parser-upload-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.resume-parser-input {
+  display: none;
+}
+
+.resume-parser-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resume-parser-button:hover:not(:disabled) {
+  background: #357abd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+
+.resume-parser-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.resume-parser-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.resume-parser-button svg {
+  flex-shrink: 0;
+}
+
+.resume-parser-filename {
+  font-size: 0.9rem;
+  color: #495057;
+  font-style: italic;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resume-parser-message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-parser-error {
+  background: #fee;
+  color: #c33;
+  border: 1px solid #fcc;
+}
+
+.resume-parser-success {
+  background: #efe;
+  color: #3c3;
+  border: 1px solid #cfc;
+}
+
+.resume-parser-message svg {
+  flex-shrink: 0;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .resume-parser-container {
+    padding: 1rem;
+  }
+
+  .resume-parser-upload-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resume-parser-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .resume-parser-filename {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+

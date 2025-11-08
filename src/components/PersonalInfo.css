@@ -1,0 +1,462 @@
+.personal-info-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  transition: background 0.5s ease;
+}
+
+.personal-info-page.dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.personal-info-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  padding: 3rem;
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.personal-info-page.dark .personal-info-container {
+  background: rgba(26, 26, 46, 0.95);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.personal-info-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.personal-info-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.personal-info-page.dark .personal-info-title {
+  color: #fff;
+  background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.personal-info-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .personal-info-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.personal-info-page.dark .progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+}
+
+.step-indicator {
+  font-size: 0.9rem;
+  color: #718096;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .step-indicator {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.personal-info-form {
+  width: 100%;
+}
+
+.form-step {
+  animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.step-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .step-title {
+  color: #fff;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #718096;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .step-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .form-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.required {
+  color: #e53e3e;
+}
+
+.optional {
+  color: #a0aec0;
+  font-weight: 400;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .optional {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  background: white;
+  color: #2d3748;
+}
+
+.personal-info-page.dark .form-input,
+.personal-info-page.dark .form-select {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.personal-info-page.dark .form-input:focus,
+.personal-info-page.dark .form-select:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+
+.form-input::placeholder {
+  color: #a0aec0;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .form-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234a5568' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.personal-info-page.dark .form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%ffffff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+}
+
+.form-select:disabled {
+  background-color: #f7fafc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.personal-info-page.dark .form-select:disabled {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.form-hint {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-top: 0.5rem;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .form-hint {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.roles-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.role-card-compact {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.personal-info-page.dark .role-card-compact {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.role-card-compact:hover {
+  border-color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+}
+
+.personal-info-page.dark .role-card-compact:hover {
+  border-color: #a78bfa;
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.3);
+}
+
+.role-card-compact.selected {
+  border-color: #667eea;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.personal-info-page.dark .role-card-compact.selected {
+  border-color: #a78bfa;
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.2) 0%, rgba(196, 181, 253, 0.2) 100%);
+}
+
+.role-card-compact-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .role-card-compact-title {
+  color: #fff;
+}
+
+.role-card-compact-description {
+  font-size: 0.9rem;
+  color: #718096;
+  line-height: 1.5;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.personal-info-page.dark .role-card-compact-description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.role-selected-indicator-compact {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.personal-info-page.dark .role-selected-indicator-compact {
+  color: #a78bfa;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.personal-info-page.dark .form-navigation {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation-spacer {
+  flex: 1;
+}
+
+.btn {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.personal-info-page.dark .btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #a78bfa;
+  border-color: #a78bfa;
+}
+
+.btn-secondary:hover {
+  background: #f7fafc;
+  transform: translateY(-2px);
+}
+
+.personal-info-page.dark .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .personal-info-container {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .personal-info-title {
+    font-size: 2rem;
+  }
+
+  .personal-info-subtitle {
+    font-size: 1rem;
+  }
+
+  .step-title {
+    font-size: 1.5rem;
+  }
+
+  .roles-grid-compact {
+    grid-template-columns: 1fr;
+  }
+
+  .form-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .navigation-spacer {
+    display: none;
+  }
+}
+

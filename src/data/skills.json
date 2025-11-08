@@ -1,0 +1,238 @@
+[
+  {
+    "id": "javascript",
+    "label": "JavaScript",
+    "aliases": ["js", "JS", "javascript", "ecmascript"],
+    "category": "language"
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "aliases": ["python", "py"],
+    "category": "language"
+  },
+  {
+    "id": "java",
+    "label": "Java",
+    "aliases": ["java"],
+    "category": "language"
+  },
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "aliases": ["ts", "TS", "typescript"],
+    "category": "language"
+  },
+  {
+    "id": "html",
+    "label": "HTML",
+    "aliases": ["html", "HTML", "html5"],
+    "category": "language"
+  },
+  {
+    "id": "css",
+    "label": "CSS",
+    "aliases": ["css", "CSS", "css3"],
+    "category": "language"
+  },
+  {
+    "id": "sql",
+    "label": "SQL",
+    "aliases": ["sql", "SQL"],
+    "category": "language"
+  },
+  {
+    "id": "react",
+    "label": "React",
+    "aliases": ["react", "React", "reactjs"],
+    "category": "framework"
+  },
+  {
+    "id": "vue",
+    "label": "Vue.js",
+    "aliases": ["vue", "Vue", "vuejs"],
+    "category": "framework"
+  },
+  {
+    "id": "angular",
+    "label": "Angular",
+    "aliases": ["angular", "Angular"],
+    "category": "framework"
+  },
+  {
+    "id": "nodejs",
+    "label": "Node.js",
+    "aliases": ["node", "Node", "nodejs", "Node.js"],
+    "category": "framework"
+  },
+  {
+    "id": "express",
+    "label": "Express.js",
+    "aliases": ["express", "Express", "expressjs"],
+    "category": "framework"
+  },
+  {
+    "id": "django",
+    "label": "Django",
+    "aliases": ["django", "Django"],
+    "category": "framework"
+  },
+  {
+    "id": "flask",
+    "label": "Flask",
+    "aliases": ["flask", "Flask"],
+    "category": "framework"
+  },
+  {
+    "id": "git",
+    "label": "Git",
+    "aliases": ["git", "Git"],
+    "category": "tool"
+  },
+  {
+    "id": "github",
+    "label": "GitHub",
+    "aliases": ["github", "GitHub"],
+    "category": "tool"
+  },
+  {
+    "id": "docker",
+    "label": "Docker",
+    "aliases": ["docker", "Docker"],
+    "category": "tool"
+  },
+  {
+    "id": "aws",
+    "label": "AWS",
+    "aliases": ["aws", "AWS", "amazon web services"],
+    "category": "tool"
+  },
+  {
+    "id": "mongodb",
+    "label": "MongoDB",
+    "aliases": ["mongodb", "MongoDB", "mongo"],
+    "category": "tool"
+  },
+  {
+    "id": "postgresql",
+    "label": "PostgreSQL",
+    "aliases": ["postgresql", "PostgreSQL", "postgres"],
+    "category": "tool"
+  },
+  {
+    "id": "mysql",
+    "label": "MySQL",
+    "aliases": ["mysql", "MySQL"],
+    "category": "tool"
+  },
+  {
+    "id": "excel",
+    "label": "Excel",
+    "aliases": ["excel", "Excel", "msexcel"],
+    "category": "tool"
+  },
+  {
+    "id": "pandas",
+    "label": "Pandas",
+    "aliases": ["pandas", "Pandas"],
+    "category": "framework"
+  },
+  {
+    "id": "numpy",
+    "label": "NumPy",
+    "aliases": ["numpy", "NumPy", "np"],
+    "category": "framework"
+  },
+  {
+    "id": "matplotlib",
+    "label": "Matplotlib",
+    "aliases": ["matplotlib", "Matplotlib"],
+    "category": "framework"
+  },
+  {
+    "id": "tableau",
+    "label": "Tableau",
+    "aliases": ["tableau", "Tableau"],
+    "category": "tool"
+  },
+  {
+    "id": "powerbi",
+    "label": "Power BI",
+    "aliases": ["powerbi", "Power BI", "power bi"],
+    "category": "tool"
+  },
+  {
+    "id": "communication",
+    "label": "Communication",
+    "aliases": ["communication", "Communication", "verbal communication"],
+    "category": "soft"
+  },
+  {
+    "id": "teamwork",
+    "label": "Teamwork",
+    "aliases": ["teamwork", "Teamwork", "collaboration"],
+    "category": "soft"
+  },
+  {
+    "id": "problemsolving",
+    "label": "Problem Solving",
+    "aliases": ["problem solving", "Problem Solving", "problem-solving"],
+    "category": "soft"
+  },
+  {
+    "id": "timemanagement",
+    "label": "Time Management",
+    "aliases": ["time management", "Time Management", "time-management"],
+    "category": "soft"
+  },
+  {
+    "id": "cplusplus",
+    "label": "C++",
+    "aliases": ["c++", "C++", "cpp", "CPP", "c plus plus", "C Plus Plus"],
+    "category": "language"
+  },
+  {
+    "id": "csharp",
+    "label": "C#",
+    "aliases": ["c#", "C#", "c sharp", "C sharp"],
+    "category": "language"
+  },
+  {
+    "id": "ruby",
+    "label": "Ruby",
+    "aliases": ["ruby", "Ruby", "ruby on rails"],
+    "category": "language"
+  },
+  {
+    "id": "r",
+    "label": "R",
+    "aliases": ["r", "R", "r language", "r programming"],
+    "category": "language"
+  },
+  {
+    "id": "php",
+    "label": "PHP",
+    "aliases": ["php", "PHP"],
+    "category": "language"
+  },
+  {
+    "id": "go",
+    "label": "Go",
+    "aliases": ["go", "Go", "golang", "Golang"],
+    "category": "language"
+  },
+  {
+    "id": "swift",
+    "label": "Swift",
+    "aliases": ["swift", "Swift"],
+    "category": "language"
+  },
+  {
+    "id": "kotlin",
+    "label": "Kotlin",
+    "aliases": ["kotlin", "Kotlin"],
+    "category": "language"
+  }
+  
+]
+

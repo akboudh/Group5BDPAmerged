@@ -1,0 +1,350 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
+  transition: background 0.3s ease;
+  color: #1a202c;
+}
+
+.app.dark {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  color: #f1f5f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%);
+  color: white;
+  padding: 3rem 0;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.app.dark .app-header {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.5px;
+}
+
+.app-subtitle {
+  font-size: 1.15rem;
+  text-align: center;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.app-user-info {
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-section,
+.role-section,
+.results-section,
+.learning-path-section {
+  width: 100%;
+}
+
+.empty-state {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.app.dark .empty-state {
+  background: rgba(26, 26, 46, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.empty-state-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.app.dark .empty-state-content h2 {
+  color: #fff;
+}
+
+.empty-state-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.app.dark .empty-state-content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.app-footer {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: white;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app.dark .app-footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.footer-link {
+  color: #a78bfa;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #c4b5fd;
+}
+
+.app-footer p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Skills Page Styles */
+.skills-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  transition: background 0.3s ease;
+}
+
+.skills-page.dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.skills-page-container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skills-page.dark .skills-page-container {
+  background: rgba(26, 26, 46, 0.95);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.skills-page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.skills-page.dark .skills-page-title {
+  background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skills-page-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.skills-page.dark .skills-page-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.skills-page-content {
+  margin-bottom: 2rem;
+}
+
+.skills-page-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-primary-large {
+  padding: 1.25rem 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-large::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-primary-large:hover::before {
+  left: 100%;
+}
+
+.btn-primary-large:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary-large:active:not(:disabled) {
+  transform: translateY(-1px) scale(1);
+}
+
+.btn-primary-large:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .app-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .app-header {
+    padding: 2rem 0;
+  }
+
+  .app-main {
+    padding: 1.5rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .app-content {
+    gap: 1.5rem;
+  }
+
+  .empty-state {
+    padding: 2rem 1.5rem;
+  }
+
+  .skills-page-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .skills-page-title {
+    font-size: 2rem;
+  }
+
+  .btn-primary-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.75rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .skills-page-title {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "junior-web-dev",
+    "name": "Junior Web Developer",
+    "description": "Build and maintain websites and web applications using HTML, CSS, and JavaScript. Work with front-end frameworks and collaborate with designers and back-end developers.",
+    "responsibilities": [
+      "Write clean, maintainable HTML, CSS, and JavaScript code",
+      "Implement responsive web designs",
+      "Work with front-end frameworks like React or Vue",
+      "Collaborate with designers and back-end developers",
+      "Debug and fix browser compatibility issues"
+    ],
+    "requiredSkills": [
+      { "skillId": "html", "importance": 3 },
+      { "skillId": "css", "importance": 3 },
+      { "skillId": "javascript", "importance": 3 },
+      { "skillId": "react", "importance": 2 },
+      { "skillId": "git", "importance": 2 },
+      { "skillId": "github", "importance": 2 },
+      { "skillId": "communication", "importance": 2 },
+      { "skillId": "teamwork", "importance": 2 },
+      { "skillId": "problemsolving", "importance": 3 }
+    ]
+  },
+  {
+    "id": "data-analyst",
+    "name": "Data Analyst",
+    "description": "Analyze data to help businesses make informed decisions. Work with datasets, create visualizations, and generate reports using statistical tools and programming languages.",
+    "responsibilities": [
+      "Collect and clean data from various sources",
+      "Perform statistical analysis and create data visualizations",
+      "Generate reports and dashboards for stakeholders",
+      "Identify trends and patterns in data",
+      "Present findings to non-technical audiences"
+    ],
+    "requiredSkills": [
+      { "skillId": "python", "importance": 3 },
+      { "skillId": "sql", "importance": 3 },
+      { "skillId": "excel", "importance": 2 },
+      { "skillId": "pandas", "importance": 2 },
+      { "skillId": "tableau", "importance": 2 },
+      { "skillId": "git", "importance": 1 },
+      { "skillId": "communication", "importance": 3 },
+      { "skillId": "problemsolving", "importance": 3 },
+      { "skillId": "timemanagement", "importance": 2 }
+    ]
+  },
+  {
+    "id": "backend-dev",
+    "name": "Backend Developer",
+    "description": "Build and maintain server-side applications, APIs, and databases. Ensure efficient data processing and secure communication between front-end and databases.",
+    "responsibilities": [
+      "Develop server-side applications and RESTful APIs",
+      "Design and maintain databases",
+      "Implement authentication and authorization",
+      "Optimize application performance",
+      "Deploy applications to cloud platforms"
+    ],
+    "requiredSkills": [
+      { "skillId": "python", "importance": 3 },
+      { "skillId": "javascript", "importance": 2 },
+      { "skillId": "nodejs", "importance": 2 },
+      { "skillId": "express", "importance": 2 },
+      { "skillId": "sql", "importance": 3 },
+      { "skillId": "mongodb", "importance": 2 },
+      { "skillId": "git", "importance": 2 },
+      { "skillId": "github", "importance": 2 },
+      { "skillId": "problemsolving", "importance": 3 },
+      { "skillId": "teamwork", "importance": 2 }
+    ]
+  },
+  {
+    "id": "fullstack-dev",
+    "name": "Full Stack Developer",
+    "description": "Work on both front-end and back-end development. Build complete web applications from user interface to database design and server-side logic.",
+    "responsibilities": [
+      "Develop both client-side and server-side applications",
+      "Design and implement databases",
+      "Create RESTful APIs",
+      "Implement responsive user interfaces",
+      "Deploy and maintain web applications"
+    ],
+    "requiredSkills": [
+      { "skillId": "html", "importance": 3 },
+      { "skillId": "css", "importance": 3 },
+      { "skillId": "javascript", "importance": 3 },
+      { "skillId": "react", "importance": 3 },
+      { "skillId": "nodejs", "importance": 3 },
+      { "skillId": "express", "importance": 2 },
+      { "skillId": "sql", "importance": 2 },
+      { "skillId": "mongodb", "importance": 2 },
+      { "skillId": "git", "importance": 2 },
+      { "skillId": "github", "importance": 2 },
+      { "skillId": "communication", "importance": 2 },
+      { "skillId": "problemsolving", "importance": 3 },
+      { "skillId": "teamwork", "importance": 2 }
+    ]
+  },
+  {
+    "id": "python-dev",
+    "name": "Python Developer",
+    "description": "Develop applications using Python. Work on web development, data processing, automation, or API development depending on the project needs.",
+    "responsibilities": [
+      "Write clean, efficient Python code",
+      "Develop web applications using Django or Flask",
+      "Create and maintain APIs",
+      "Work with databases and data processing",
+      "Write unit tests and debug code"
+    ],
+    "requiredSkills": [
+      { "skillId": "python", "importance": 3 },
+      { "skillId": "django", "importance": 2 },
+      { "skillId": "flask", "importance": 2 },
+      { "skillId": "sql", "importance": 2 },
+      { "skillId": "git", "importance": 2 },
+      { "skillId": "github", "importance": 2 },
+      { "skillId": "problemsolving", "importance": 3 },
+      { "skillId": "teamwork", "importance": 2 },
+      { "skillId": "communication", "importance": 2 }
+    ]
+  },
+  {
+    "id": "frontend-dev",
+    "name": "Frontend Developer",
+    "description": "Focus on creating engaging user experiences. Build interactive and responsive user interfaces using modern JavaScript frameworks and design principles.",
+    "responsibilities": [
+      "Build responsive and interactive user interfaces",
+      "Implement designs using HTML, CSS, and JavaScript",
+      "Work with modern front-end frameworks",
+      "Optimize web applications for performance",
+      "Ensure cross-browser compatibility"
+    ],
+    "requiredSkills": [
+      { "skillId": "html", "importance": 3 },
+      { "skillId": "css", "importance": 3 },
+      { "skillId": "javascript", "importance": 3 },
+      { "skillId": "react", "importance": 3 },
+      { "skillId": "typescript", "importance": 2 },
+      { "skillId": "git", "importance": 2 },
+      { "skillId": "github", "importance": 2 },
+      { "skillId": "communication", "importance": 2 },
+      { "skillId": "problemsolving", "importance": 3 }
+    ]
+  },
+  {
+    "id": "devops-engineer",
+    "name": "DevOps Engineer",
+    "description": "Bridge development and operations. Automate deployment processes, manage infrastructure, and ensure reliable application delivery.",
+    "responsibilities": [
+      "Automate deployment and infrastructure management",
+      "Monitor application performance and reliability",
+      "Manage CI/CD pipelines",
+      "Work with cloud platforms and containerization",
+      "Troubleshoot production issues"
+    ],
+    "requiredSkills": [
+      { "skillId": "docker", "importance": 3 },
+      { "skillId": "aws", "importance": 3 },
+      { "skillId": "git", "importance": 3 },
+      { "skillId": "github", "importance": 2 },
+      { "skillId": "python", "importance": 2 },
+      { "skillId": "javascript", "importance": 1 },
+      { "skillId": "problemsolving", "importance": 3 },
+      { "skillId": "teamwork", "importance": 2 },
+      { "skillId": "communication", "importance": 2 }
+    ]
+  },
+  {
+    "id": "database-admin",
+    "name": "Database Administrator",
+    "description": "Manage and maintain databases. Ensure data integrity, performance, and security. Work with SQL and NoSQL databases.",
+    "responsibilities": [
+      "Design and maintain database schemas",
+      "Optimize database performance",
+      "Ensure data security and backup",
+      "Troubleshoot database issues",
+      "Write and optimize SQL queries"
+    ],
+    "requiredSkills": [
+      { "skillId": "sql", "importance": 3 },
+      { "skillId": "postgresql", "importance": 3 },
+      { "skillId": "mysql", "importance": 2 },
+      { "skillId": "mongodb", "importance": 2 },
+      { "skillId": "python", "importance": 1 },
+      { "skillId": "problemsolving", "importance": 3 },
+      { "skillId": "timemanagement", "importance": 2 },
+      { "skillId": "communication", "importance": 2 }
+    ]
+  }
+]
+
