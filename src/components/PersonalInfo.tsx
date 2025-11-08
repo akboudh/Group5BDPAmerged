@@ -19,7 +19,10 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
   const [dreamRoleId, setDreamRoleId] = useState<string | null>(null);
   const [currentStep, setCurrentStep] = useState(1);
   const totalSteps = 2;
-  const colleges = collegesData as string[];
+  // Sort colleges alphabetically (case-insensitive)
+  const colleges = [...(collegesData as string[])].sort((a, b) => 
+    a.localeCompare(b, undefined, { sensitivity: 'base' })
+  );
   const { theme } = useTheme();
 
   const handleSubmit = (e: React.FormEvent) => {
