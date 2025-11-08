@@ -5,12 +5,31 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #4338ca 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #c084fc 100%);
+  background: linear-gradient(135deg, var(--university-bg-primary) 0%, var(--university-bg-secondary) 100%);
   transition: background 0.5s ease;
+  color: var(--university-text-color);
+}
+
+.aspyr-landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Add subtle overlay for better text readability on light backgrounds */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .aspyr-landing.dark {
-  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 25%, #4338ca 50%, #6366f1 75%, #7c3aed 100%);
+  background: linear-gradient(135deg, var(--university-bg-primary-dark) 0%, var(--university-bg-secondary-dark) 100%);
+  color: #ffffff;
+}
+
+.aspyr-landing.dark::before {
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
 }
 
 .theme-toggle {
@@ -60,29 +79,23 @@
 .aspyr-logo {
   font-size: clamp(4rem, 10vw, 7rem);
   font-weight: 900;
-  color: #ffffff;
+  color: var(--university-text-color);
   text-shadow: 
-    0 0 20px rgba(255, 255, 255, 0.8),
-    0 0 40px rgba(255, 255, 255, 0.6),
-    0 0 60px rgba(255, 255, 255, 0.4),
-    2px 2px 8px rgba(0, 0, 0, 0.5),
-    4px 4px 12px rgba(0, 0, 0, 0.3);
+    1px 1px 4px rgba(0, 0, 0, 0.2),
+    0 0 8px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.1em;
   margin: 0;
   position: relative;
   z-index: 2;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
 }
 
 .dark .aspyr-logo {
   color: #ffffff;
   text-shadow: 
-    0 0 30px rgba(167, 139, 250, 0.9),
-    0 0 50px rgba(167, 139, 250, 0.7),
-    0 0 70px rgba(167, 139, 250, 0.5),
-    2px 2px 8px rgba(0, 0, 0, 0.7),
-    4px 4px 12px rgba(0, 0, 0, 0.5);
-  filter: drop-shadow(0 4px 8px rgba(167, 139, 250, 0.4));
+    2px 2px 8px rgba(0, 0, 0, 0.5),
+    0 0 10px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .logo-letter {
@@ -131,22 +144,21 @@
 
 .landing-description {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--university-text-color);
+  opacity: 0.95;
   max-width: 600px;
   margin: 0 auto 3rem;
   line-height: 1.8;
-  text-shadow: 
-    0 2px 8px rgba(0, 0, 0, 0.4),
-    0 0 20px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   animation: fadeInUp 1s ease-out 0.3s both;
   font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
 
 .dark .landing-description {
-  color: rgba(255, 255, 255, 1);
-  text-shadow: 
-    0 2px 8px rgba(0, 0, 0, 0.6),
-    0 0 20px rgba(167, 139, 250, 0.3);
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .features-preview {
@@ -163,15 +175,17 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--university-text-color);
+  opacity: 0.9;
   font-size: 1rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 150px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item:hover {
@@ -284,32 +298,8 @@
   animation: float 20s ease-in-out infinite;
 }
 
-.circle-1 {
-  width: 400px;
-  height: 400px;
-  top: -100px;
-  left: -100px;
-  animation-delay: 0s;
-}
-
-.circle-2 {
-  width: 300px;
-  height: 300px;
-  bottom: -50px;
-  right: -50px;
-  animation-delay: 5s;
-}
-
-.circle-3 {
-  width: 250px;
-  height: 250px;
-  top: 50%;
-  left: 50%;
-  animation-delay: 10s;
-}
-
-.dark .bg-circle {
-  background: rgba(167, 139, 250, 0.15);
+.aspyr-landing.dark .bg-circle {
+  background: rgba(var(--university-secondary-rgb), 0.15);
 }
 
 @keyframes float {

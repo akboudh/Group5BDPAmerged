@@ -1,15 +1,17 @@
 .personal-info-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  background: var(--university-bg-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
   transition: background 0.5s ease;
+  color: var(--university-text-color);
 }
 
 .personal-info-page.dark {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: var(--university-bg-primary-dark);
+  color: #f1f5f9;
 }
 
 .personal-info-container {

@@ -384,26 +384,26 @@
 }
 
 .tab-button:hover {
-  color: #667eea;
-  background: rgba(102, 126, 234, 0.05);
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.05);
   transform: translateY(-2px);
 }
 
 .results-dashboard.dark .tab-button:hover {
-  color: #a78bfa;
-  background: rgba(167, 139, 250, 0.1);
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.1);
 }
 
 .tab-button.active {
-  color: #667eea;
-  border-bottom-color: #667eea;
-  background: rgba(102, 126, 234, 0.05);
+  color: #6366f1;
+  border-bottom-color: #6366f1;
+  background: rgba(99, 102, 241, 0.05);
 }
 
 .results-dashboard.dark .tab-button.active {
-  color: #a78bfa;
-  border-bottom-color: #a78bfa;
-  background: rgba(167, 139, 250, 0.15);
+  color: #8b5cf6;
+  border-bottom-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.15);
 }
 
 .tab-content {

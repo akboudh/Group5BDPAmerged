@@ -23,7 +23,7 @@ function AppContent() {
   const [selectedRoleId, setSelectedRoleId] = useState<string | null>(null);
   const [analysisResult, setAnalysisResult] = useState<GapAnalysisResult | null>(null);
   const [currentStep, setCurrentStep] = useState<AppStep>('landing');
-  const { theme } = useTheme();
+  const { theme, setUniversityColors } = useTheme();
 
   // Load data on mount
   useEffect(() => {
@@ -46,6 +46,14 @@ function AppContent() {
       setSelectedRoleId(profile.targetRoleId);
     }
     setUserSkills(profile.skills || []);
+    
+    // Apply university colors if school is selected
+    if (profile.school) {
+      setUniversityColors(profile.school);
+    } else {
+      setUniversityColors(null);
+    }
+    
     setCurrentStep('skills');
   };
 
@@ -62,6 +70,7 @@ function AppContent() {
     setUserSkills([]);
     setSelectedRoleId(null);
     setAnalysisResult(null);
+    setUniversityColors(null); // Reset to default colors
     setCurrentStep('landing');
   };
 

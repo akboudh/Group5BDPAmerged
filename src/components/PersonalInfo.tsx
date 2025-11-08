@@ -23,7 +23,28 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
   const colleges = [...(collegesData as string[])].sort((a, b) => 
     a.localeCompare(b, undefined, { sensitivity: 'base' })
   );
-  const { theme } = useTheme();
+  const { theme, setUniversityColors } = useTheme();
+
+  // Apply university colors when school changes (for preview)
+  const handleSchoolChange = (newSchool: string) => {
+    setSchool(newSchool);
+    // Only apply colors if user is a student
+    if (newSchool && isStudent) {
+      setUniversityColors(newSchool);
+    } else if (!newSchool) {
+      // Reset to default if school is cleared
+      setUniversityColors(null);
+    }
+  };
+
+  // Reset colors when isStudent changes
+  const handleStudentStatusChange = (student: boolean) => {
+    setIsStudent(student);
+    if (!student) {
+      setSchool('');
+      setUniversityColors(null);
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,6 +57,12 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
       dreamRole: dreamRoleId || undefined,
       skills: [], // Skills will be added in the next step
     };
+    // Ensure university colors are set before completing
+    if (profile.school) {
+      setUniversityColors(profile.school);
+    } else {
+      setUniversityColors(null);
+    }
     onComplete(profile);
   };
 
@@ -112,9 +139,8 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
                   value={isStudent ? 'yes' : 'no'}
                   onChange={(e) => {
                     const studentStatus = e.target.value === 'yes';
-                    setIsStudent(studentStatus);
+                    handleStudentStatusChange(studentStatus);
                     if (!studentStatus) {
-                      setSchool('');
                       setExperienceLevel('other');
                     } else {
                       setExperienceLevel('student');
@@ -136,7 +162,7 @@ export function PersonalInfo({ roles, onComplete }: PersonalInfoProps) {
                     <select
                       id="school"
                       value={school}
-                      onChange={(e) => setSchool(e.target.value)}
+                      onChange={(e) => handleSchoolChange(e.target.value)}
                       className="form-select"
                     >
                       <option value="">Select your school (optional)...</option>

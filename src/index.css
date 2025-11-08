@@ -21,6 +21,19 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* University colors - default to purple theme */
+  --university-primary: #6366f1;
+  --university-secondary: #8b5cf6;
+  --university-primary-dark: #4338ca;
+  --university-secondary-dark: #7c3aed;
+  --university-primary-rgb: 99, 102, 241;
+  --university-secondary-rgb: 139, 92, 246;
+  --university-bg-primary: #6366f1;
+  --university-bg-secondary: #8b5cf6;
+  --university-text-color: #ffffff;
+  --university-bg-primary-dark: #1e1b4b;
+  --university-bg-secondary-dark: #312e81;
 }
 
 :root.dark {
@@ -32,13 +45,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f7fafc;
-  transition: background-color 0.3s ease;
-  color: #1a202c;
+  background-color: var(--university-bg-primary);
+  transition: background-color 0.5s ease;
+  color: var(--university-text-color);
 }
 
 :root.dark body {
-  background-color: #0f172a;
+  background-color: var(--university-bg-primary-dark);
   color: #f1f5f9;
 }
 
